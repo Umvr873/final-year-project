@@ -2,7 +2,7 @@ streamlit==1.33.0
 torch==2.9.1
 torchvision==0.24.1
 timm==0.9.8
-pytorch-grad-cam==1.4.6
+grad-cam==1.4.6
 numpy==1.26.4
 Pillow==10.3.0
 matplotlib==3.8.4
