@@ -6,6 +6,17 @@ import timm
 from PIL import Image
 import numpy as np
 import matplotlib.cm as cm
+import os
+import urllib.request
+import streamlit as st
+
+MODEL_URL = "PUT_YOUR_RELEASE_URL_HERE"
+MODEL_PATH = "best_model.pth"
+
+if not os.path.exists(MODEL_PATH):
+    with st.spinner("Downloading model weights..."):
+        urllib.request.urlretrieve(MODEL_URL, MODEL_PATH)
+
 
 # ========================= CONFIG =========================
 class_names = ['COVID', 'Lung_Opacity', 'Normal', 'Viral Pneumonia']
