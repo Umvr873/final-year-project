@@ -10,12 +10,13 @@ import os
 import urllib.request
 import streamlit as st
 
-MODEL_URL = "https://github.com/Umvr873/final-year-project/releases/tag/1.0"
+MODEL_URL = "https://github.com/Umvr873/final-year-project/releases/download/1.0/best_model.pth"
 MODEL_PATH = "best_model.pth"
 
 if not os.path.exists(MODEL_PATH):
     with st.spinner("Downloading model weights..."):
         urllib.request.urlretrieve(MODEL_URL, MODEL_PATH)
+
 
 
 # ========================= CONFIG =========================
