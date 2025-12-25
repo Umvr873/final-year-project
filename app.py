@@ -124,7 +124,7 @@ if uploaded_file:
         if grayscale_ratio > 30:
             st.error("🚫 This does not appear to be a valid chest X-ray.")
         else:
-            st.image(image, caption="Uploaded X-ray", use_container_width=True)
+            st.image(image, caption="Uploaded X-ray", use_column_width=True)
             img_tensor = transform(image).unsqueeze(0)
             img_tensor.requires_grad_()
 
