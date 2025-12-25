@@ -10,7 +10,7 @@ import os
 import urllib.request
 import streamlit as st
 
-MODEL_URL = "PUT_YOUR_RELEASE_URL_HERE"
+MODEL_URL = "https://github.com/Umvr873/final-year-project/releases/tag/1.0"
 MODEL_PATH = "best_model.pth"
 
 if not os.path.exists(MODEL_PATH):
