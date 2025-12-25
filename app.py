@@ -53,10 +53,27 @@ suggestions = {
 }
 
 explanation = {
-    "COVID": "The model identified bilateral pulmonary regions with increased attenuation patterns consistent with ground-glass opacities. Clinical correlation is required.",
-    "Lung_Opacity": "The model detected areas of increased radiographic density. Further evaluation is needed.",
-    "Viral Pneumonia": "Patchy heterogeneous opacities detected, suggestive of viral pneumonia. Correlate with clinical and lab data.",
-    "Normal": "No significant radiographic abnormalities detected. Lung fields appear clear."
+    "COVID": (
+        "The model identified bilateral pulmonary regions with increased attenuation patterns consistent with ground-glass opacities. "
+        "Such findings are commonly reported in viral pneumonias, including COVID-19, particularly with peripheral and basal distribution. "
+        "These imaging features are not disease-specific and require clinical and laboratory correlation for definitive diagnosis."
+    ),
+
+    "Lung_Opacity": (
+        "The model detected focal or diffuse areas of increased radiographic density within the lung fields. "
+        "Pulmonary opacities may represent a wide spectrum of pathological processes, including infection, inflammation, edema, or mass lesions. "
+        "Further diagnostic evaluation is required to determine the underlying cause."
+    ),
+
+    "Viral Pneumonia": (
+        "The highlighted regions demonstrate patchy and heterogeneous opacities, a pattern frequently associated with viral pneumonia. "
+        "These findings may overlap with other atypical pneumonias and should be interpreted in conjunction with clinical presentation and laboratory data."
+    ),
+
+    "Normal": (
+        "No significant radiographic abnormalities were detected. Lung fields appear clear with preserved anatomical landmarks and no focal consolidations. "
+        "It is important to note that early or mild pulmonary disease may not be visible on plain radiography."
+    )
 }
 
 # ========================= LOAD MODEL =========================
