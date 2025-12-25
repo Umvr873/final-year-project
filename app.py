@@ -124,7 +124,7 @@ if uploaded_file:
         if grayscale_ratio > 30:
             st.error("🚫 This does not appear to be a valid chest X-ray.")
         else:
-            st.image(image, caption="Uploaded X-ray", use_column_width=True)
+            st.image(image, caption="Uploaded X-ray", use_container_width=True)
             img_tensor = transform(image).unsqueeze(0)
             img_tensor.requires_grad_()
 
@@ -150,7 +150,7 @@ if uploaded_file:
                 image_np = np.array(image).astype(np.float32)/255.0
                 heatmap_color = cm.jet(heatmap_img/255.0)[..., :3]
                 blended = np.clip(0.6*image_np + 0.4*heatmap_color, 0, 1)
-                st.image(blended, caption="Model Attention Map", use_column_width=True)
+                st.image(blended, caption="Model Attention Map", use_container_width=True)
 
                 st.subheader("🧠 Model Explanation")
                 st.write(explanation[pred_class])
